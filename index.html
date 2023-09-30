@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+
+.star{
+            width: 40px;
+            height: 40px;
+            border: 2px solid hsl(217, 12%, 63%); 
+            background-color:  hsl(217, 12%, 63%);
+            
+            /* Border color (you can change this) */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: hsl(213, 19%, 18%);/* Text color (you can change this) */
+            margin-right: 15px; /* Add space between circles */
+        }
+
+        /* Center the card horizontally and vertically */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* This ensures it's centered vertically */
+            background-color:hsl(216, 12%, 8%);
+        }
+
+        /* Style for the card */
+        .card {
+            width: 18rem;
+            background-color:hsl(213, 19%, 18%);
+        }
+        .rating-container {
+            display: flex;
+            align-items: center;
+            width: 26rem;
+        }
+        
+        .star {
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .selected {
+
+            background-color:  hsl(25, 97%, 53%);
+
+        }
+      
+
+        .star:hover{
+          background-color:  hsl(25, 97%, 53%);
+        }
+
+  </style>
+</head>
+<body>
+
+
+
+<div class="container">
+
+ 
+  <div class="card" style="width: 25rem;">
+    <div class="card-body">
+      <h5 class="card-title circle star "> <div class="circle-badge"><svg width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg></div></h5>
+      <div class="img d-flex justify-content-center align-items-center"></div>
+      <div id="result" class="mt-5 mb-3 d-flex justify-content-center align-items-center text-center" style="color: hsl(25, 97%, 53%);"></div>
+      <h4 class="card-subtitle mb-2 ty "  style="color: white; margin-left: 15px;">
+        How did we do?</h4>
+      <p class="card-text fs-6 msg mt-4 text-center" style="color:  hsl(216, 12%, 54%);">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+
+        <div class="rating-container">
+          <span class="star m-3" data-rating="1">1</span>
+          <span class="star m-3" data-rating="2">2</span>
+          <span class="star m-3" data-rating="3">3</span>
+          <span class="star m-3" data-rating="4">4</span>
+          <span class="star m-3" data-rating="5">5</span>
+      </div>
+
+
+      <button id="submitBtn" class="btn mt-5 rounded-pill btnclick  btnn " style="color: white;  background-color: hsl(25, 97%, 53%); padding-left: 120px; padding-right: 120px; margin-left: 10px; ">SUBMIT</button>
+
+
+
+
+
+    
+    </div>
+  </div>
+</div>
+
+<div class="attribution fs-4">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">FIZA SAIF</a>.
+</div>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+  
+ 
+</body>
+</html>
